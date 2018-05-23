@@ -32,7 +32,7 @@ def linkage_to_leaves(Z,data_size):
     node_to_leaves = {}
 
     for merge in Z[:,:2].astype(int):
-``
+
         # Both node have node id < number of node, the two merging nodes are leaves
         if(merge.max()< data_size):
             node_to_leaves[node_id] = []
